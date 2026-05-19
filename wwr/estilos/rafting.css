@@ -1,0 +1,152 @@
+:root {
+  --cor-primaria: #0b4f6c;
+  --cor-secundaria: #01baef;
+  --cor-destaque1: #073b4c;
+  --cor-destaque2: #ffd166;
+  --cor-clara: #f5fbff;
+  --cor-branca: #ffffff;
+  --fonte-titulo: 'Montserrat', Arial, sans-serif;
+  --fonte-body: 'Roboto', Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-body);
+  color: var(--cor-destaque1);
+  background-color: var(--cor-clara);
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  background-color: var(--cor-branca);
+  border-bottom: 3px solid var(--cor-secundaria);
+}
+
+.logo {
+  width: 140px;
+  margin: 12px auto;
+}
+
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+header nav a:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branca);
+}
+
+h1,
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.9;
+  background-color: rgba(7, 59, 76, 0.82);
+  color: var(--cor-branca);
+  letter-spacing: 1px;
+}
+
+.hero article {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  background-color: rgba(255, 255, 255, 0.88);
+  border-left: 6px solid var(--cor-destaque2);
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  border: 3px solid var(--cor-branca);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+main section {
+  background-color: var(--cor-branca);
+  border-left: 6px solid var(--cor-secundaria);
+}
+
+main section p {
+  line-height: 1.6;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-top: 20px;
+  background-color: var(--cor-branca);
+  border-top: 3px solid var(--cor-secundaria);
+}
+
+footer p {
+  margin-left: 16px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+}
+
+.redes-sociais img {
+  width: 36px;
+  height: 36px;
+}
