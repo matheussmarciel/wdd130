@@ -5,8 +5,8 @@
   --cor-destaque2: #ffd166;
   --cor-clara: #f5fbff;
   --cor-branca: #ffffff;
-  --fonte-titulo: 'Montserrat', Arial, sans-serif;
-  --fonte-body: 'Roboto', Helvetica, sans-serif;
+  --fonte-titulo: Arial, Helvetica, sans-serif;
+  --fonte-body: Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -136,17 +136,17 @@ footer p {
   margin-left: 16px;
 }
 
-.redes-sociais {
+.socialmedia {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.redes-sociais a {
+.socialmedia a {
   text-decoration: none;
 }
 
-.redes-sociais img {
+.socialmedia img {
   width: 36px;
   height: 36px;
 }
