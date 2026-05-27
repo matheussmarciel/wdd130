@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
-main {
+
+
+header, footer, .grid {
     max-width: 840px;
     margin: 0 auto;
-    padding: 1rem;
 }
+main {
+    padding: 1rem;
+    grid-column: 2;
+}
+
 
 main img {
     width: 150px;
@@ -24,6 +30,8 @@ nav {
     background-color: steelblue;
     padding: 10px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -38,12 +46,15 @@ nav a {
 h1 {
     color: steelblue;
     margin-bottom: 1rem;
+    border-bottom: 1px solid steelblue;
 }
 
-aside {
-    width: 300px;
-    position: relative;
+
+aside {    position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
+
 
 aside h2 {
     position: absolute;
