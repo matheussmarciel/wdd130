@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco | Companhia de Rafting em Corredeiras</title>
+  <meta name="description"
+    content="Entre em contato com a Companhia de Rafting em Corredeiras para tirar dúvidas, fazer perguntas sobre reservas ou enviar sugestões.">
+  <meta name="author" content="Matheus Santana">
+  <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body class="contact-page">
+  <header>
+    <img src="imagens/logo-rafting.svg" alt="Logotipo Corrente Viva Rafting" class="logo">
+    <nav>
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="trips.html">Passeios</a>
+      <a href="contact.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-heading">
+      <h1>Companhia de Rafting em Corredeiras</h1>
+      <p><strong>123 Rua Principal do Rio</strong></p>
+      <p><strong>Foz do Iguaçu, Paraná</strong></p>
+      <p><strong>+55 45 99999-9999</strong></p>
+      <p><strong>info@corredeiras.com</strong></p>
+    </section>
+
+    <section class="contact-content">
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps?q=Foz%20do%20Igua%C3%A7u%20Paran%C3%A1&output=embed" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de localização da Companhia de Rafting em Corredeiras">
+        </iframe>
+      </div>
+
+      <form class="contact-form">
+        <fieldset>
+          <legend>Formulário de Contato</legend>
+
+          <div class="form-row">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite aqui" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+          </div>
+
+          <div class="form-row purpose-row">
+            <p class="form-label">Propósito da Mensagem</p>
+
+            <div class="radio-options">
+              <div class="radio-group">
+                <input type="radio" id="general" name="purpose" value="consulta-geral" required>
+                <label for="general">Consulta Geral</label>
+              </div>
+
+              <div class="radio-group">
+                <input type="radio" id="reservation" name="purpose" value="pergunta-sobre-reserva">
+                <label for="reservation">Pergunta sobre Reserva</label>
+              </div>
+
+              <div class="radio-group">
+                <input type="radio" id="suggestion" name="purpose" value="sugestao-de-site">
+                <label for="suggestion">Sugestão de Site</label>
+              </div>
+            </div>
+          </div>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Digite aqui" required></textarea>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Por favor, me inscreva na newsletter mensal</label>
+          </div>
+
+          <button type="submit">Entrar em Contato</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="employees">
+      <h2>Estamos Aqui para Servi-lo</h2>
+
+      <div class="employee-grid">
+        <figure>
+          <img src="imagens/employee1.jpg" alt="Gerente de atendimento sorrindo">
+          <figcaption>Gerente de Atendimento</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imagens/employee2.jpg" alt="Consultor de reservas sorrindo">
+          <figcaption>Consultor de Reservas</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imagens/employee3.jpg" alt="Instrutora de rafting sorrindo">
+          <figcaption>Instrutora de Rafting</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Corrente Viva Rafting | Matheus Santana</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/icon-facebook.svg" alt="Ícone do Facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/icon-instagram.svg" alt="Ícone do Instagram">
+      </a>
+      <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/icon-x.svg" alt="Ícone da rede social X">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>
