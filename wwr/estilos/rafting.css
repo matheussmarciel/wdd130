@@ -136,22 +136,21 @@ footer p {
   margin-left: 16px;
 }
 
-.socialmedia {
+.redes-sociais {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.socialmedia a {
+.redes-sociais a {
   text-decoration: none;
 }
 
-.socialmedia img {
+.redes-sociais img {
   width: 36px;
   height: 36px;
 }
 
-/* ===== Layout da seção História ===== */
 .historia-grid {
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
@@ -167,7 +166,7 @@ footer p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== Galeria da seção Aventura ===== */
+
 .aventura-galeria {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -198,7 +197,7 @@ footer p {
   color: var(--cor-primaria);
 }
 
-/* Responsivo: quebra a galeria */
+
 @media (max-width: 840px) {
   header, main, footer {
     width: auto;
@@ -225,7 +224,7 @@ footer p {
   }
 }
 
-/* ===== Página Fale Conosco ===== */
+
 .contact-page header {
   background-color: #d8c1f0;
   border: 2px solid #5f5f5f;
@@ -434,16 +433,16 @@ footer p {
   text-align: center;
 }
 
-.contact-page footer .socialmedia {
+.contact-page footer .redes-sociais {
   justify-content: end;
 }
 
-.contact-page footer .socialmedia a {
+.contact-page footer .redes-sociais a {
   border: none;
   background-color: transparent;
 }
 
-.contact-page footer .socialmedia img {
+.contact-page footer .redes-sociais img {
   width: 36px;
   height: 36px;
 }
@@ -476,7 +475,7 @@ footer p {
     text-align: center;
   }
 
-  .contact-page footer .socialmedia {
+  .contact-page footer .redes-sociais {
     justify-content: center;
   }
 }
