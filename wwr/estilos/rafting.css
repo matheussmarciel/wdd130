@@ -480,3 +480,87 @@ footer p {
   }
 }
 
+/* ===== Página Inicial ===== */
+main form {
+  display: grid;
+  gap: 10px;
+  max-width: 520px;
+  margin: 16px auto;
+  padding: 16px;
+  background-color: var(--cor-clara);
+  border-radius: 8px;
+}
+
+main form label {
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+main form input,
+main form textarea {
+  padding: 10px;
+  border: 1px solid rgba(7, 59, 76, 0.35);
+  border-radius: 6px;
+  font-family: var(--fonte-body);
+  font-size: 1rem;
+}
+
+main form button,
+main section a {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main form button:hover,
+main section a:hover {
+  background-color: var(--cor-destaque1);
+}
+
+/* ===== Página Passeios ===== */
+table {
+  width: calc(100% - 32px);
+  margin: 16px;
+  border-collapse: collapse;
+  background-color: var(--cor-branca);
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid rgba(7, 59, 76, 0.25);
+  text-align: left;
+}
+
+th {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--cor-clara);
+}
+
+.aventura-galeria figcaption strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--cor-destaque1);
+}
+
+@media (max-width: 840px) {
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
